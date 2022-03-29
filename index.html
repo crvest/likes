@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container flexcolumn">
+
+        <header id="title" class="container flexcolumn">
+            <h1 id="networktitle">Network</h1>
+            <h1 id="yourfeed">Your Feed</h1>
+        </header>
+
+        <main class="container flexrowstart">
+            <!-- left column with avatar info -->
+            <div class="columnleft">
+                <div class="avatar flexcolumn">
+                    <img src="./user-circle.png" alt="user circle">
+                    <a href="">Add an avatar</a>
+                    <h3>Some User</h3>
+                </div>
+            </div>
+            <!-- right colunmn with user posts -->
+            <div class="columnright">
+                <div class="userbox">
+                    <header class="username flexrow">
+                        <h3>Some User</h3>
+                        <div class="flexrow">
+                            <p class="likes"><span id="count1">1</span> like(s)</p>
+                            <button class="likesbutton" onclick="addLike1()">Like</button>
+                        </div>
+                    </header>
+                    <p class="post">This is some filler text. It can say anything we want</p>
+                </div>
+                <div class="userbox">
+                    <header class="username flexrow">
+                        <h3>Some User</h3>
+                        <div class="flexrow">
+                            <p class="likes"><span id="count2">1</span> like(s)</p>
+                            <button class="likesbutton" onclick="addLike2()">Like</button>
+                        </div>
+                    </header>
+                    <p class="post">This is some filler text. It can say anything we want</p>
+                </div>
+                <div class="userbox">
+                    <header class="username flexrow">
+                        <h3>Some User</h3>
+                        <div class="flexrow">
+                            <p class="likes"><span id="count3">1</span> like(s)</p>
+                            <button class="likesbutton" onclick="addLike3()">Like</button>
+                        </div>
+                    </header>
+                    <p class="post">This is some filler text. It can say anything we want</p>
+                </div>
+            </div>
+        </main>
+    </main>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
